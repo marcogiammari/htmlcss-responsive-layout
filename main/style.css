@@ -8,13 +8,14 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
-.boxed {
-    width: 80%; 
-    margin: auto}
 
 ul {
     list-style: none;
@@ -42,18 +43,37 @@ li {
 /* MAIN */
 
 .container {
-    padding: 3rem 0 6rem;
-    gap: 1.5rem;
+    width: 100%;
+    margin: auto;
+}
+
+.col {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid red;
 }
 
 .card {
+    background-color: #b5ddff;
     border-radius: 1.5rem;
-    width: 100%;
+    padding: 2.25rem 2rem 0;
 }
 
-.card .card-img {
-    display: block;
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
+
+.card-btn {
+    align-self: center;
+}
+
+.card-img img {
+    max-height: 15rem;
+}
+
+
 
 /* FOOTER */
 
@@ -62,24 +82,25 @@ li {
 /* MEDIA QUERIES */
 
 /* TABLET */
-@media screen and (min-width:481px) and (max-width: 768px) {
+@media screen and (min-width:481px) and (max-width: 992px) {
 
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .col:first-of-type {
+        width: 66%;
+    }
+    .col {
+        width: 33%;
     }
 
-    .card {
-        width: 30%;
-    }
-
-    .container > div:first-of-type {
-        width: calc(60% + 1.5rem);
+    .card-btn, .card-img {
+        align-self: start;
+        text-align: center;
+        border: 1px solid red;
     }
 }
+   
 
 /* DESKTOP */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 993px) {
     .navbar {
         padding: 1em 0;
         width: 67%;
@@ -94,18 +115,30 @@ li {
         display: block;
     }
 
+    .col:first-of-type {
+        width: 66%;
+    }
+    .col {
+        width: 33%;
+    }
+
     .container {
-        width: 67%;
+        width: calc(67% + 3rem);
+    }
+
+    #first-card {
         flex-direction: row;
-        flex-wrap: wrap;
     }
 
-    .card {
-        width: 30%;
+    .card-txt {
+        width: 50%;
+        padding-bottom: 1.5rem;
     }
 
-    .container > div:first-of-type {
-        width: calc(60% + 1.5rem);
+
+    .card-img {
+        width: 50%;
+        align-self: flex-end;
     }
+   
 }
-
