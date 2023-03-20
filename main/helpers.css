@@ -1,0 +1,27 @@
+/* HELPERS */
+.flex                       {display: flex;}
+.flex-dir-col               {flex-direction: column;}
+.just-cont-space-around     {justify-content: space-around;}
+.just-cont-space-between    {justify-content: space-between;}
+.just-cont-center           {justify-content: center;}
+.just-cont-end              {justify-content: flex-end;}
+.align-items-center         {align-items: center;}
+.align-items-start          {align-items: flex-start;}
+.align-items-end            {align-items: flex-end;}
+.flex-wrap                  {flex-wrap: wrap;}
+.w100                       {width: 100%;}
+.h100                       {height: 100%;}
+.col33                      {width: calc(100% / 3);}
+.col50                      {width: 50%;}
+
+/* COLORS */
+
+.txt-white                  {color: #ffffff}
+.txt-black                  {color: #030303;}
+.txt-purple                 {color: #9792e4}
+.txt-yellow                 {color: #fdc15f}
+.txt-blue                   {color: #0084fd;}
+.bg-blue                    {background-color: #0084fd;}
+.bg-lightblue               {background-color: #b5ddff;}
+.bg-purple                  {background-color: #9792e4;}
+.bg-black                   {background-color: #333333;}

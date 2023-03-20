@@ -1,0 +1,19 @@
+.debug-border {
+    border: 5px solid red;
+}
+
+.debug-blue {
+    background-color: blue;
+}
+
+.debug-green {
+    background-color: green;
+}
+
+.debug-height-600 {
+    min-height: 600px;
+}
+
+section {
+    min-height: 1000px;
+}

@@ -1,0 +1,74 @@
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 80%; 
+    margin: auto}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+/* HEADER */
+
+.navbar {
+    padding: 1em;
+}
+
+.navbar > .menu {
+    font-size: 1.5rem;
+}
+
+.navbar > .desktop-menu {
+    display: none;
+}
+
+/* MAIN */
+
+.card {
+    border-radius: 5%;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* FOOTER */
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1160px) {
+
+    .container {
+        width: 67%;
+    }
+
+    .navbar {
+        padding: 1em 2em 1em 5em;
+    }
+
+    .navbar > .menu {
+        display: none;
+    }
+
+    .navbar > .desktop-menu {
+        display: block;
+    }
+}
