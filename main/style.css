@@ -12,7 +12,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+.boxed {
     width: 80%; 
     margin: auto}
 
@@ -28,7 +28,7 @@ li {
 /* HEADER */
 
 .navbar {
-    padding: 1em;
+    padding: 1em 2em;
 }
 
 .navbar > .menu {
@@ -41,12 +41,19 @@ li {
 
 /* MAIN */
 
-.card {
-    border-radius: 5%;
-    width: 100%;
-    margin: auto;
+.container {
+    padding: 3rem 0 6rem;
+    gap: 1.5rem;
 }
 
+.card {
+    border-radius: 1.5rem;
+    width: 100%;
+}
+
+.card .card-img {
+    display: block;
+}
 
 /* FOOTER */
 
@@ -54,14 +61,29 @@ li {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1160px) {
+/* TABLET */
+@media screen and (min-width:481px) and (max-width: 768px) {
 
     .container {
-        width: 67%;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
+    .card {
+        width: 30%;
+    }
+
+    .container > div:first-of-type {
+        width: calc(60% + 1.5rem);
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px) {
     .navbar {
-        padding: 1em 2em 1em 5em;
+        padding: 1em 0;
+        width: 67%;
+        margin: auto;
     }
 
     .navbar > .menu {
@@ -71,4 +93,19 @@ li {
     .navbar > .desktop-menu {
         display: block;
     }
+
+    .container {
+        width: 67%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .container > div:first-of-type {
+        width: calc(60% + 1.5rem);
+    }
 }
+
