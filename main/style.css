@@ -14,7 +14,12 @@ img {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica, sans-serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
 }
 
 ul {
@@ -24,11 +29,6 @@ ul {
 li {
     display: inline-block;
     padding-right: 2rem;
-}
-
-.col {
-    padding: 1.5rem;
-    border: 1px solid red;
 }
 
 /* HEADER */
@@ -48,22 +48,22 @@ li {
 /* MAIN */
 
 section {
-    padding: 6rem 0;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
+    padding: 2rem;
 }
 
 .cards .col {
     width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+#demo-card {
+    padding: 2rem 2rem 0;
 }
 
 .cards .card {
     background-color: #b5ddff;
     border-radius: 1.5rem;
-    padding: 2.25rem 2rem 0;
+    padding: 2rem;
 }
 
 .card-txt {
@@ -72,14 +72,11 @@ section {
     gap: 1.5rem;
 }
 
-.card-btn {
-    align-self: center;
+.card-btn button {
+    width: 10em;
+    padding: 0.5em 1em;
+    border-radius: 1em;
 }
-
-.cards .card-img img {
-    max-height: 15rem;
-}
-
 
 .strategic-planning .app-dev-card {
     border-radius: 1.5rem;
@@ -142,16 +139,14 @@ section {
 /* TABLET */
 @media screen and (min-width:481px) and (max-width: 992px) {
 
-    .cards .col:first-of-type {
-        width: 66%;
-    }
-    .cards .col {
-        width: 33%;
-    }
-
     .cards .card-btn, .card-img {
         text-align: center;
         border: 1px solid red;
+        align-self: start;
+    }
+
+    .cards .card-img img {
+        max-width: 50%;
     }
 
     .testimonials .card.bg-purple {
@@ -181,8 +176,9 @@ section {
         font-size: 1.5rem;
     }
 
-    .get-started .container {
+    .get-started .container, footer .container {
         width: 50%;
+        margin:auto;
     }
 }
    
@@ -203,16 +199,9 @@ section {
         display: block;
     }
 
-    #demo-col {
-        width: 66%;
-    }
-
-    .cards .col {
-        width: 33%;
-    }
-
-    .cards .container {
-        width: calc(67% + 3rem);
+    .container {
+        width: calc(67% + 4rem);
+        margin: auto;
     }
 
     #demo-card {
@@ -222,10 +211,8 @@ section {
     .cards .card-txt {
         width: 50%;
         padding-bottom: 1.5rem;
-        flex-grow: 1;
     }
-
-
+    
     .cards .card-img {
         display: flex;
         justify-content: center;
@@ -233,9 +220,7 @@ section {
     }
    
     .strategic-planning .container {
-        
         flex-direction: row;
-        width: calc(67% + 3rem);
     }
 
     .strategic-planning .col {
@@ -292,4 +277,23 @@ section {
         margin:auto;
     }
     
+}
+
+/* > 480 */
+
+@media screen and (min-width: 481px) {
+    .col {
+        padding: .5rem;
+    }
+    
+
+    #demo-col {
+        width: 66%;
+    }
+
+    .cards .col {
+        width: 33%;
+    }
+
+
 }

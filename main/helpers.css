@@ -18,6 +18,12 @@
 .pad24                      {padding: 1.5rem;}
 .txt-align-center           {text-align: center;}
 .underlined                 {text-decoration: underline;}
+.font64                     {font-size: 4rem;}
+.font20                     {font-size: 1.25rem}
+.font14                     {font-size: .875rem;}
+.txt-grey                   {color: #596d7e}
+.line-height24              {line-height: 1.5rem}
+.bold6                      {font-weight: 600;}
 
 /* COLORS */
 
