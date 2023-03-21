@@ -58,6 +58,7 @@ section {
 .cards .col {
     width: 100%;
     padding-bottom: 1.5rem;
+    display: flex;
 }
 
 #demo-card {
@@ -67,7 +68,7 @@ section {
 .cards .card {
     background-color: #b5ddff;
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .card-txt {
@@ -94,14 +95,14 @@ section {
 }
 
 .testimonials .card {
-    padding: 1.5rem;
+    padding: 2.5rem;
     border-radius: 1.5rem;
 }
 
 .testimonials .card-img img {
     border-radius: 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     object-fit: cover;
     max-width: unset;
 }
@@ -124,7 +125,7 @@ section {
 
 .about-us .quote {
     position: absolute;
-    top: 0;
+    top: 30%;
     right: 0;
     font-size: 8rem;
 }
@@ -226,6 +227,10 @@ section {
         display: flex;
         justify-content: center;
         align-self: flex-end;
+    }
+
+    .cards img {
+        max-width: 60%;
     }
    
     .strategic-planning .container {
