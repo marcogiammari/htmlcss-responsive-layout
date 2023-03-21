@@ -42,8 +42,12 @@ li {
 
 /* MAIN */
 
+section {
+    padding: 6rem 0;
+}
+
 .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
@@ -80,6 +84,15 @@ li {
     text-align: center;
 }
 
+.testimonials .card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.testimonials .card-img img {
+    border-radius: 100%;
+}
+
 
 /* FOOTER */
 
@@ -101,6 +114,15 @@ li {
         align-self: start;
         text-align: center;
         border: 1px solid red;
+    }
+
+    .testimonials .card.bg-purple {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .testimonials .card-img {
+        width: 50%;
     }
 }
    
@@ -170,5 +192,15 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: end;
+    }
+
+    .testimonials .card.bg-purple {
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .testimonials .card-img {
+        width: 50%;
     }
 }
