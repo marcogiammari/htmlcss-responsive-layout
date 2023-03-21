@@ -13,6 +13,7 @@
 .h100                       {height: 100%;}
 .col33                      {width: calc(100% / 3);}
 .col50                      {width: 50%;}
+.italic                     {font-style: italic;}
 
 /* COLORS */
 
