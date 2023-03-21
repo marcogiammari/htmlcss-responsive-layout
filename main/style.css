@@ -17,6 +17,10 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
+p, span {
+    line-height: 1.75rem;
+}
+
 button {
     all: unset;
     cursor: pointer;
@@ -83,6 +87,12 @@ section {
     text-align: center;
 }
 
+.strategic-planning button {
+    border-radius: 50%;
+    padding: 1em;
+    margin-bottom: 1rem;
+}
+
 .testimonials .card {
     padding: 1.5rem;
     border-radius: 1.5rem;
@@ -141,7 +151,6 @@ section {
 
     .cards .card-btn, .card-img {
         text-align: center;
-        border: 1px solid red;
         align-self: start;
     }
 
