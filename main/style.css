@@ -122,6 +122,17 @@ section {
     font-size: 8rem;
 }
 
+.get-started h3 {
+    font-size: 3rem;
+}
+
+.get-started h2 {
+    font-size: 5rem;
+}
+
+.footerbar {
+    padding: 1rem 0;
+}
 /* FOOTER */
 
 
@@ -168,6 +179,10 @@ section {
     .about-us .col.small-col {
         width: 30%;
         font-size: 1.5rem;
+    }
+
+    .get-started .container {
+        width: 50%;
     }
 }
    
@@ -271,4 +286,10 @@ section {
         width: 30%;
         font-size: 1.5rem;
     }
+
+    .get-started .container, footer .container {
+        width: 50%;
+        margin:auto;
+    }
+    
 }
