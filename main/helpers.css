@@ -19,11 +19,13 @@
 .txt-align-center           {text-align: center;}
 .underlined                 {text-decoration: underline;}
 .font64                     {font-size: 4rem;}
+.font32                     {font-size: 2rem}
 .font20                     {font-size: 1.25rem}
 .font14                     {font-size: .875rem;}
 .txt-grey                   {color: #596d7e}
 .line-height24              {line-height: 1.5rem}
 .line-height32              {line-height: 2rem;}
+.thin                       {font-weight: 100;}
 
 /* COLORS */
 
