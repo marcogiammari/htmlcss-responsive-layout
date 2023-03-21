@@ -26,6 +26,11 @@ li {
     padding-right: 2rem;
 }
 
+.col {
+    padding: 1.5rem;
+    border: 1px solid red;
+}
+
 /* HEADER */
 
 .navbar {
@@ -51,10 +56,8 @@ section {
     margin: auto;
 }
 
-.col {
+.cards .col {
     width: 100%;
-    padding: 1.5rem;
-    border: 1px solid red;
 }
 
 .cards .card {
@@ -90,6 +93,10 @@ section {
 
 .testimonials .card-img img {
     border-radius: 100%;
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    max-width: unset;
 }
 
 .benefits .card {
@@ -98,6 +105,21 @@ section {
 
 .benefits h2 {
     font-size: 3rem;
+}
+
+.about-us img {
+    border-radius: 100%;
+}
+
+.about-us .img-wrapper {
+    position: relative;
+}
+
+.about-us .quote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 8rem;
 }
 
 /* FOOTER */
@@ -117,7 +139,6 @@ section {
     }
 
     .cards .card-btn, .card-img {
-        align-self: start;
         text-align: center;
         border: 1px solid red;
     }
@@ -127,10 +148,6 @@ section {
         gap: 0.5rem;
     }
 
-    .testimonials .card-img {
-        width: 50%;
-    }
-
     .benefits .container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -138,6 +155,19 @@ section {
 
     .benefits .card {
         width: calc(50% - 1.5rem);
+    }
+
+    .about-us .container {
+        flex-direction: row;
+    }
+
+    .about-us .col.big-col {
+        width: 70%;
+        line-height: 2rem;
+    }
+    .about-us .col.small-col {
+        width: 30%;
+        font-size: 1.5rem;
     }
 }
    
@@ -158,7 +188,7 @@ section {
         display: block;
     }
 
-    #first-col {
+    #demo-col {
         width: 66%;
     }
 
@@ -170,7 +200,7 @@ section {
         width: calc(67% + 3rem);
     }
 
-    #first-card {
+    #demo-card {
         flex-direction: row;
     }
 
@@ -227,5 +257,18 @@ section {
 
     .benefits .card {
         width: calc(33% - 1rem);
+    }
+
+    .about-us .container {
+        flex-direction: row;
+    }
+
+    .about-us .col.big-col {
+        width: 70%;
+        line-height: 3rem;
+    }
+    .about-us .col.small-col {
+        width: 30%;
+        font-size: 1.5rem;
     }
 }
